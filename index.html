@@ -59,6 +59,16 @@
                 background-color: white;
             }
 
+            main {
+                margin: auto 15px;
+                display: block;
+            }
+
+            a {
+                color: #2196F3;
+                text-decoration: none;
+            }
+
             .name {
                 text-align: center;
                 margin-bottom: 0; // make it not a h1 and h2, just divs
@@ -73,7 +83,7 @@
             }
 
             amp-img {
-                background-color: gray;
+                background-color: #FBE9E7;
             }
 
             h1 {
@@ -101,11 +111,11 @@
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: no-wrap;
+                margin-bottom: 20px;
             }
 
             .flex-item {
                 padding: 3px;
-                /*border: 1px solid blue;*/
                 flex-grow: 1;
             }
             .flex-item:last-child {
@@ -121,37 +131,35 @@
                 color: rgba(0,0,0,0.54);
             }
 
-            section {
-                /*border: 1px solid red;*/
-                margin: 10px 0;
-                -webkit-hyphens: auto;
-                -moz-hyphens: auto;
-                hyphens: auto;
-                text-align: justify;
-            }
 
-            main {
-                margin: auto 10px;
-                display: block;
-            }
-
-            a {
-                color: #2196F3;
-                text-decoration: none;
-            }
+            /*@supports (-webkit-hyphens: auto) or (-moz-hyphens: auto) or (-ms-hyphens: auto) {*/
+                section {
+                    -webkit-hyphens: auto;
+                    -moz-hyphens: auto;
+                    -ms-hyphens: auto; 
+                    hyphens: auto;
+                    text-align: justify;
+                }
+            /*}*/
 
             /*TODO provide ipad experience*/
 
             @media only screen and (min-width: 768px) {
-/*                section {
-                    margin: 0 20%;
-                }
-                .logo-container {
-                    margin: 0 20%;
-                }
-*/
                 main {
                     margin: auto 20%;
+                }
+
+                .flex-item {
+                    padding: 10px;
+                    flex-grow: 1;
+                }
+
+                amp-img {
+                    -webkit-filter: grayscale(1);
+                }
+
+                amp-img:hover {
+                    -webkit-filter: grayscale(0);
                 }
             }
 
@@ -171,28 +179,25 @@
 
         <!-- consider amp-fit-text for font size to grow and shrink-->
         <section>
-            <p>Technologies sorem ipsum dolor sit amet, consectetur <strong>adipiscing</strong> elit. Mauris ut lectus iaculis, sodales sapien ac, lacinia purus.</p>
-
-            <p>Donec placerat lorem at hendrerit dignissim. Mauris sollicitudin elit sit amet est fringilla luctus. Proin dictum tincidunt volutpat <a target="_blank" href="http://google.pdf">resume</a>.</p>
+            <p>Software engineer, over 10 years' experience, PhD London based sorem ipsum dolor sit amet, consectetur <strong>adipiscing</strong> elit. Mauris ut lectus iaculis, sodales sapien ac, lacinia purus.</p>
+            <!-- less sass bootsrap usability -->
+            <p>Technologies Donec placerat lorem at hendrerit dignissim. Mauris sollicitudin elit sit amet est fringilla luctus. Proin dictum tincidunt volutpat <a target="_blank" href="http://google.pdf">resume</a>.</p>
 
         <!-- use tiny svg -->
         <!-- break 3 at a time -->
         <!-- just one responsive image? -->
         <div class="logo-container">
             <div class="flex-item">
-                <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="js" height="100" width="100" layout="responsive"></amp-img>
+                <amp-img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="js" height="100" width="100" layout="responsive"></amp-img>
             </div>
             <div class="flex-item">
-                <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="html" height="100" width="100" layout="responsive"></amp-img>
+                <amp-img src="http://io13-high-dpi.appspot.com/images/CSS3_Logo.svg" alt="html" height="100" width="100" layout="responsive"></amp-img>
             </div>
             <div class="flex-item">
                 <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="css" height="100" width="100" layout="responsive"></amp-img>
             </div>
             <div class="flex-item">
                 <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="node" height="100" width="100" layout="responsive"></amp-img>
-            </div>
-            <div class="flex-item">
-                <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="python" height="100" width="100" layout="responsive"></amp-img>
             </div>
         </div>
 <!--         <div class="caption">
@@ -207,7 +212,7 @@
             Less important stuff
             </h3>
         </header>
-        <p>Frameworks dolor sit amet, consectet uradipiscing elit. Mauris ut lectus iaculis, sodales sapien ac, lacinia purus.</p>
+        <p>Frameworks dolor sit amet, progresive enhancement, mobile-firstconsectet uradipiscing elit. Mauris ut lectus iaculis, sodales sapien ac, lacinia purus.</p>
 
         <p>Proin pellentesque, mi vel semper placerat, justo urna volutpat turpis, sed euismod felis augue ac odio. Cras sit amet cursus quam. Vivamus egestas maximus eros, eget tempor augue pharetra quis. Suspendisse potenti.</p>
         </section>
@@ -288,6 +293,18 @@
             <header>
                 <h3>
                 Social profiles
+                </h3>
+            </header>
+
+            <p>
+                cv, linkedin, etc maybe in the footer??
+            </p>
+        </section>
+
+        <section>
+            <header>
+                <h3>
+                Conferences jsconf css conf eu 14, 15, jqueryuk 2015, edgeconf 2015, ffconf 2015
                 </h3>
             </header>
 
