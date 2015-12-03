@@ -1,1 +1,1 @@
-# lc512k site
+# lc512k
