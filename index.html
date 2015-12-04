@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <meta name="description" content="Full-stack JavaScript developer in London">
         <meta name="keywords" content="front-end,front end,javascript,html,html5,css,css3,software,sofware engineering,sofware development,node,node.js,">
-
         <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -53,6 +52,7 @@
                 font-style: normal;
                 font-variant: normal;
                 line-height: 20px;
+                hyphenate-character: "\2112";
             }
 
             body {
@@ -76,7 +76,6 @@
             }
           
             .title {
-                text-align: center;
                 color: #FF5722;//#2196F3;//#009688;//#00796B;
                 margin-top: 5px;
                 font-weight: 200;
@@ -94,17 +93,12 @@
                 font-weight: 400;
             }
             h2 {
+                text-align: center;
                 font-size: 20px;
                 font-style: normal;
                 font-variant: normal;
                 line-height: 20px;
                 font-weight: 300;
-            }
-            h3 {
-                font-size: 14px;
-                font-style: normal;
-                font-variant: normal;
-                line-height: 15.4px;
             }
             .logo-container {
                 display: flex;
@@ -131,6 +125,12 @@
                 color: rgba(0,0,0,0.54);
             }
 
+            em {
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 400;
+            }
+
 
             /*@supports (-webkit-hyphens: auto) or (-moz-hyphens: auto) or (-ms-hyphens: auto) {*/
                 section {
@@ -145,8 +145,25 @@
             /*TODO provide ipad experience*/
 
             @media only screen and (min-width: 768px) {
+
+                html {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
                 main {
                     margin: auto 20%;
+                }
+
+                h1 {
+                    font-size: 28px;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+                h2 {
+                    font-size: 24px;
+                    line-height: 26px;
+                    font-weight: 600;
                 }
 
                 .flex-item {
@@ -172,21 +189,24 @@
             <header>
  <!--            <h1 class="name">Laura Carvajal</h1>
             <h2 class="title">software engineer</h2> -->
-            <h1 class="name">Lorem Ipsum</h1>
-            <h2 class="title">dolorese sitamer</h2>
+            <h1 class="name">Laura Carvajal</h1>
+            <h2 class="title">software engineer</h2>
         </header>
 
 
-        <!-- consider amp-fit-text for font size to grow and shrink-->
         <section>
-            <p>Software engineer, over 10 years' experience, PhD London based sorem ipsum dolor sit amet, consectetur <strong>adipiscing</strong> elit. Mauris ut lectus iaculis, sodales sapien ac, lacinia purus.</p>
-            <!-- less sass bootsrap usability -->
-            <p>Technologies Donec placerat lorem at hendrerit dignissim. Mauris sollicitudin elit sit amet est fringilla luctus. Proin dictum tincidunt volutpat <a target="_blank" href="http://google.pdf">resume</a>.</p>
+            <p>I'm a London-based software engineer with over <em>10 years</em> commercial experience in web development.</p>
+
+            <p>I specialize in writing large web and mobile applications using <em>JavaScript</em>, <em>HTML5</em> and <em>CSS3</em> on <em>MVC</em> frameworks.</p>
+
+            <p>My most recent experience was building <a href="m.badoo.com">Badoo</a> <em>mobile web</em>, with over 1 million users.</p>
+
+            <p>See my <a target="_blank" href="http://google.pdf">CV</a> in pdf and <a href="">LinkedIn</a> profile for more.</p>
 
         <!-- use tiny svg -->
         <!-- break 3 at a time -->
         <!-- just one responsive image? -->
-        <div class="logo-container">
+<!--         <div class="logo-container">
             <div class="flex-item">
                 <amp-img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="js" height="100" width="100" layout="responsive"></amp-img>
             </div>
@@ -199,7 +219,7 @@
             <div class="flex-item">
                 <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="node" height="100" width="100" layout="responsive"></amp-img>
             </div>
-        </div>
+        </div> -->
 <!--         <div class="caption">
             Some caption here. Maybe not
         </div> -->
@@ -208,18 +228,24 @@
 
         <section>
         <header>
-            <h3>
-            Less important stuff
-            </h3>
+            <h2>Technologies</h2>
         </header>
-        <p>Frameworks dolor sit amet, progresive enhancement, mobile-firstconsectet uradipiscing elit. Mauris ut lectus iaculis, sodales sapien ac, lacinia purus.</p>
+        <p><em>Backbone</em> and <em>Ember</em> are frameworks I've worked with extensively for building large mobile-first applications with high-volume traffic, as well as other in-house <em>MVC</em> frameworks.</p>
 
-        <p>Proin pellentesque, mi vel semper placerat, justo urna volutpat turpis, sed euismod felis augue ac odio. Cras sit amet cursus quam. Vivamus egestas maximus eros, eget tempor augue pharetra quis. Suspendisse potenti.</p>
+        <p>Other technologies I've used commercially include <em>NodeJS</em>, <em>LESS</em>, <em>Bootstrap</em>, <em>Grunt</em>, <em>RequireJS</em> and <em>Phonegap</em>. I've also contributed to open source projects using <em>Angular</em>. My back-end experience is largely in <em>Java</em>.</p>
+        </section>
+
+        <section>
+        <header>
+            <h2>Research</h2>
+        </header>
+        <p>I have a BS in Computer Science and a PhD in Software Engineering. My research focused on <em>Object Oriented Software Design</em> and <em>Usability</em>, with results published by the leading <em>IEEE</em> Software Engineering research magazine.</p>
         </section>
         
         <!-- use tiny svg -->
         <!-- break 3 at a time -->
         <!-- just one responsive image? -->
+        <!--  
         <div class="logo-container">
             <div class="flex-item">
                 <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="js" height="100" width="100" layout="responsive"></amp-img>
@@ -240,11 +266,11 @@
 
         </section>
 
-        <section>
+       <section>
             <header>
-                <h3>
-                Commercial products
-                </h3>
+                <h2>
+                Latest project
+                </h2>
             </header>
 
             <p>
@@ -254,9 +280,9 @@
 
         <section>
             <header>
-                <h3>
+                <h2>
                 Open source contributions
-                </h3>
+                </h2>
             </header>
 
             <p>
@@ -266,9 +292,9 @@
 
         <section>
             <header>
-                <h3>
+                <h2>
                 Publications
-                </h3>
+                </h2>
             </header>
 
             <p>
@@ -279,21 +305,9 @@
 
         <section>
             <header>
-                <h3>
-                Studies
-                </h3>
-            </header>
-
-            <p>
-                PhD &amp; Comp science
-            </p>
-        </section>
-
-        <section>
-            <header>
-                <h3>
+                <h2>
                 Social profiles
-                </h3>
+                </h2>
             </header>
 
             <p>
@@ -303,27 +317,39 @@
 
         <section>
             <header>
-                <h3>
+                <h2>
                 Conferences jsconf css conf eu 14, 15, jqueryuk 2015, edgeconf 2015, ffconf 2015
-                </h3>
+                </h2>
             </header>
 
             <p>
                 cv, linkedin, etc maybe in the footer??
             </p>
+        </section> -->
+<!--         <div class="logo-container">
+            <div class="flex-item">
+                <amp-img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="js" height="100" width="100" layout="responsive"></amp-img>
+            </div>
+            <div class="flex-item">
+                <amp-img src="http://io13-high-dpi.appspot.com/images/CSS3_Logo.svg" alt="html" height="100" width="100" layout="responsive"></amp-img>
+            </div>
+            <div class="flex-item">
+                <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="css" height="100" width="100" layout="responsive"></amp-img>
+            </div>
+            <div class="flex-item">
+                <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="node" height="100" width="100" layout="responsive"></amp-img>
+            </div>
+        </div> -->
+        <section>
+            <header>
+                <h2>Experiments</h2>
+            </header>
+            <p>My most recent side projects and experiments revolve around <a href="http://www.html5rocks.com/en/tutorials/service-worker/introduction/">Service Worker</a> for offline web experience, <a href="http://webcomponents.org/">Web Components</a>, <a href="https://www.google.com/design/spec/material-design/introduction.html">Material Design</a> and Google Accelerated Mobile Pages. This page is written in <a href="https://www.ampproject.org/">AMP HTML</a>.</p>
         </section>
-
-
-        <amp-img src="http://www.keenthemes.com/preview/metronic/theme/assets/global/plugins/jcrop/demos/demo_files/image1.jpg" alt="Welcome" height="200" width="200" layout="responsive"></amp-img>
-
-        <amp-twitter width=390 height=50
-            data-tweetid="585110598171631616"
-            //data-cards="hidden"
-            layout="responsive">
-        </amp-twitter>
-
         </main>
-
-        
+<!-- mobile debugging, dev tools, tdd when java. with js tests were after-->
+        <footer>
+            
+        </footer>
   </body>
 </html>
